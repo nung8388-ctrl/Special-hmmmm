@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Music Site</title>
+</head>
+<body style="text-align:center; font-family:sans-serif; background:black; color:white;">
+
+    <h1>🎵 My Song Player</h1>
+
+    <button onclick="playSong()" 
+        style="padding:15px 30px; font-size:18px; background:red; color:white; border:none; border-radius:10px;">
+        ▶ Play Song
+    </button>
+
+    <br><br>
+
+    <audio id="mySong">
+        <source src="song.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        function playSong() {
+            var song = document.getElementById("mySong");
+            song.volume = 1.0;
+            song.play();
+        }
+    </script>
+
+</body>
+</html>
